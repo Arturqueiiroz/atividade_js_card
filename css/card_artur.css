@@ -38,11 +38,11 @@ body {
 
 .card {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--color-pink-light);
-    max-width: 600px;
+    width: min(100%, 600px);  /* Up to 100% of parent, max 800px [web:1] */
+    height: max(800px, 50vh); /* At least 400px or 50% viewport height [web:2] */
     border-radius: 30px;
     box-shadow: 2px 2px 50px 0px var(--color-pink-hot);
 }
@@ -50,6 +50,7 @@ body {
 .texto {
     padding: 0 15px;
     color: var(--color-blk);
+    text-align: center;
 }
 
 h1 {

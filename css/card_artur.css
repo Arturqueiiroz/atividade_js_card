@@ -1,5 +1,6 @@
 body {
     font-family: Arial;
+    margin: 15px;
     background-color: rgb(112, 138, 255);
 }
 
@@ -8,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 140px;
+    margin-top: 90px;
     /*flex-wrap: wrap; caso queira colocar um do lado do outro só quando estiver 600px*/ 
 }
 
@@ -29,10 +30,10 @@ body {
 @media (max-width: 900px) {
 
     .sessao {
+        margin-top: 0;
         align-items: center;
         flex-direction: column;
     }
-
 }
 
 .avatar img{

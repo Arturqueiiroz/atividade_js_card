@@ -22,7 +22,6 @@ body {
     border-radius: 30px;
 }
 
-
 .texto {
     padding: 0 15px;
 }
@@ -34,4 +33,11 @@ body {
         flex-direction: column;
     }
 
+}
+
+.avatar img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }

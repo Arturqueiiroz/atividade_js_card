@@ -105,3 +105,33 @@ button img {
     height: 150px;
     border-radius: 50%;
 }
+
+#mudarTema {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--color-pink-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#mudarTema svg{
+    fill: var(--color-pink-light);
+}
+
+#mudarTema svg:last-child{
+    display: none;
+}
+
+.modoEscuro #mudarTema svg:first-child{
+    display: none;
+}
+
+.modoEscuro #mudarTema svg:last-child{
+    display: block;
+}

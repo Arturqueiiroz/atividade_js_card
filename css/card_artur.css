@@ -105,3 +105,21 @@ button img {
     height: 150px;
     border-radius: 50%;
 }
+
+.li { 
+    background-color: #eee; 
+    color: #000000; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    margin: 5px;
+} 
+.remocao {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+.ola {
+    display: none;
+}

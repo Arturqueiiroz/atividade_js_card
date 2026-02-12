@@ -9,6 +9,7 @@ body {
     align-items: center;
     gap: 30px;
     margin-top: 140px;
+    /*flex-wrap: wrap; caso queira colocar um do lado do outro só quando estiver 600px*/ 
 }
 
 .card {

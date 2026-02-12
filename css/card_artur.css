@@ -1,13 +1,37 @@
+:root {
+  --color-purple-dark: #2b0f54;
+  --color-magenta: #ab1f65;
+  --color-pink-hot: #ff4f69;
+  --color-pink-light: #fff7f8;
+  --color-orange-fiery: #ff8142;
+  --color-yellow-bright: #ffda45;
+  --color-blue-electric: #3368dc;
+  --color-cyan-glow: #49e7ec;
+  --color-blk: #0e0e12;
+}
+
+.modoEscuro {
+  --color-purple-dark: #0d051f;
+  --color-magenta: #5a0d32;
+  --color-pink-hot: #cc3f54;
+  --color-pink-light: #0e0e12 ;
+  --color-orange-fiery: #ffaa80;
+  --color-yellow-bright: #cca636;
+  --color-blue-electric: #1e4ba8;
+  --color-cyan-glow: #2eb0b9;
+  --color-blk: #fff7f8;
+}
+
 body {
     font-family: Arial;
-    background-color: rgb(112, 138, 255);
+    background: linear-gradient(45deg, var(--color-orange-fiery), var(--color-purple-dark));
 }
 
 .sessao {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     margin-top: 140px;
     /*flex-wrap: wrap; caso queira colocar um do lado do outro só quando estiver 600px*/ 
 }
@@ -17,13 +41,41 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color: var(--color-pink-light);
     max-width: 600px;
     border-radius: 30px;
+    box-shadow: 2px 2px 50px 0px var(--color-pink-hot);
 }
 
 .texto {
     padding: 0 15px;
+    color: var(--color-blk);
+}
+
+h1 {
+    color: var(--color-blk);
+}
+
+h2 {
+    color: var(--color-blk);
+}
+
+p {
+    color: var(--color-blk);
+}
+
+ul {
+    color: var(--color-blk);
+}
+
+li {
+    color: var(--color-blk);
+}
+
+button {
+    color: var(--color-blk);
+    border-radius: 25px;
+    background: linear-gradient(90deg, var(--color-orange-fiery), var(--color-purple-dark));
 }
 
 @media (max-width: 900px) {
@@ -33,6 +85,12 @@ body {
         flex-direction: column;
     }
 
+}
+
+button img {
+    width: 40px;
+    height: 40px;
+    stroke: var(--color-blk);
 }
 
 .avatar img{
